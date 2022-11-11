@@ -7,5 +7,12 @@ use Illuminate\Http\Request;
 
 class IndexController extends Controller
 {
-    //
+    public function show()
+    {
+        return 'Hello';
+    }
+    public function showid($id)
+    {
+        return "Hello {$id}";
+    }
 }
